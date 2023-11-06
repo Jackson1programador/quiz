@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormQuizComponent } from './pages/form-quiz/form-quiz.component';
 import { PlayingComponent } from './pages/playing/playing.component';
+import { TemplateComponent } from './pages/template/template.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PlayingComponent } from './pages/playing/playing.component';
     HomeComponent,
     LoginComponent,
     FormQuizComponent,
-    PlayingComponent
+    PlayingComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,
