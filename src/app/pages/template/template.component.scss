@@ -1,0 +1,116 @@
+@import "../../CSS/app.scss";
+
+
+// layout do template
+.gridTemplate{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 64px 1fr 64px;
+}
+
+.gridItem:nth-child(1){
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.gridItem:nth-child(2){
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.gridItem:nth-child(3){
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.gridItem:nth-child(4){
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+// Toolbar
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+// Main
+.navBar{
+  border-right: 2px solid;
+  border-color: $colorBorderLight;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerUser{
+  width: 100%;
+  height: 170px;
+  border-bottom: 2px solid;
+  border-color: $colorBorderLight;
+  padding: 32px;
+  box-sizing: border-box;
+  line-height: 30px;
+}
+
+.imgUser{
+  width: 70px;
+  height: 70px;
+}
+
+.informationUser{
+  font-size: 0.8rem;
+  color: $colorInformationUser;
+}
+
+.listNav{
+  width: 100%;
+}
+
+.linkNav{
+  width: 100%;
+  text-decoration: none;
+}
+
+.descritionNav{
+  font-size: 0.8rem;
+  line-height: 24px;
+  color: $colorInformationUser;
+}
+.iconNav{
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+.liNav{
+  width: 100%;
+  padding: 10px 0px;
+  text-align: start;
+  display: flex;
+  vertical-align: center;
+}
+.liNav:hover{
+  background-color: $colorBorderLight;
+}
+
+.pages{
+  padding: 1rem;
+}
+
+// Footer
+.fonte-copyright{
+  font-size: 0.7rem;
+  line-height: 16px;
+}
+
+.container-copyright{
+  height: 100%
+}

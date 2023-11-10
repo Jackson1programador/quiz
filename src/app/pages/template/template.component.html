@@ -1,1 +1,58 @@
-<p>template works!</p>
+<body class="gridTemplate">
+
+  <!-- Toolbar -->
+  <header class="gridItem">
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Quiz</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </header>
+
+
+  <!-- Main -->
+    <div class="navBar gridItem">
+      <div class="containerUser flx column center">
+        <img [src]="imgUser" alt="foto do usuario" class="imgUser">
+        <p class="nameUser informationUser">{{nameUser}}</p>
+        <p class="nameOffice informationUser">{{nameOffice}}</p>
+      </div>
+
+      <div class="containerNavBar flx column center">
+        <ul class="listNav">
+          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">list</mat-icon><Samp class="descritionNav">Tipo de jogos</Samp></li></a>
+          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">format_list_bulleted</mat-icon><samp class="descritionNav">Categorias</samp></li></a>
+          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">play_circle_filled</mat-icon><span class="descritionNav">Iniciar</span></li></a>
+          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">question_mark</mat-icon><span class="descritionNav">Enviar quiz</span></li></a>
+          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">hotel_class</mat-icon><span class="descritionNav">Vip</span></li></a>
+          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">logout</mat-icon><span class="descritionNav">Sair</span></li></a>
+        </ul>
+      </div>
+
+    </div>
+    <div class="pages gridItem">
+
+    </div>
+
+
+  <!-- Footer -->
+  <footer class="gridItem">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row class="flx column">
+          <div class="container-copyright flx column center">
+            <p class="fonte-copyright">&copy; Jackson Albuquerque 2023</p>
+            <p class="fonte-copyright">Dev FullStack</p>
+          </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </footer>
+
+</body>
