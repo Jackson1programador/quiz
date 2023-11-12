@@ -2,11 +2,12 @@
 
   <!-- Toolbar -->
   <header class="gridItem">
-    <mat-toolbar color="primary">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
+    <mat-toolbar olbar color="primary">
+      <mat-icon class="logoQuiz">quiz</mat-icon>
+      <span class="logoQuizText">Quiz</span>
+      <button id="btnMenu" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon id="btnMenu" >menu</mat-icon>
       </button>
-      <span>Quiz</span>
       <span class="example-spacer"></span>
       <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
         <mat-icon>favorite</mat-icon>
@@ -21,7 +22,7 @@
   <!-- Main -->
     <div class="navBar gridItem">
       <div class="containerUser flx column center">
-        <img [src]="imgUser" alt="foto do usuario" class="imgUser">
+        <img [src]="imgUser" alt="foto do usuario" class="imgUser" (click)="openDialogEditUser()">
         <p class="nameUser informationUser">{{nameUser}}</p>
         <p class="nameOffice informationUser">{{nameOffice}}</p>
       </div>

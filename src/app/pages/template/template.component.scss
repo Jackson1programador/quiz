@@ -42,6 +42,15 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+.logoQuiz{
+
+}
+.logoQuizText{
+  margin-left: 8px;
+}
+#btnMenu{
+  display: none;
+}
 
 // Main
 .navBar{
@@ -64,6 +73,9 @@
 .imgUser{
   width: 70px;
   height: 70px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid 2px $colorBorderLight;
 }
 
 .informationUser{
