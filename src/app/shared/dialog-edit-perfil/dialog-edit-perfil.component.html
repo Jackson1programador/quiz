@@ -1,1 +1,17 @@
-<p>dialog-edit-perfil works!</p>
+<h1 mat-dialog-title>Oi {{user?.name}}</h1>
+<div mat-dialog-content id="containerForm">
+  <p>Altere as informações que deseja</p>
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput *ngIf="user !== undefined" [(ngModel)]="user.name">
+  </mat-form-field>
+
+  <label for="foto"> Foto</label>
+  <input type="file" id="foto" >
+
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="cancel()">Cancelar</button>
+  <button mat-button (click)="edit()">Confirmar</button>
+</div>

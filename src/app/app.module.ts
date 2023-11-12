@@ -1,6 +1,10 @@
+// angular
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
+//routing
 import { AppRoutingModule } from './app-routing.module';
 
 //component
@@ -18,6 +22,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
+//Serviços
+import { ServiceUserPerfilService } from './service/service-user-perfil.service';
 
 
 @NgModule({
@@ -28,7 +37,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     FormQuizComponent,
     PlayingComponent,
     TemplateComponent,
-    DialogEditPerfilComponent
+    DialogEditPerfilComponent,
+
 
   ],
   imports: [
@@ -38,7 +48,12 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule
+
 
 
   ],
@@ -49,7 +64,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   providers: [],

@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+
+// angular material
 import { MatDialog } from '@angular/material/dialog';
+
+// component
 import { DialogEditPerfilComponent } from 'src/app/shared/dialog-edit-perfil/dialog-edit-perfil.component';
+
+// service
+import { ServiceUserPerfilService } from '../../service/service-user-perfil.service'
 
 @Component({
   selector: 'app-template',
@@ -9,29 +16,27 @@ import { DialogEditPerfilComponent } from 'src/app/shared/dialog-edit-perfil/dia
 })
 export class TemplateComponent implements OnInit{
 
-  constructor (public dialog: MatDialog) {}
+  constructor (
+    public dialog: MatDialog,
+    public userPerfilService: ServiceUserPerfilService
+    ) {}
 
-  // public imgUser: String = "../../../assets/fotoUsuario.png"
-  public imgUser: String = "../../../assets/teste.jpg"
-  public nameUser: String = "Jackson"
-  public nameOffice: String = "Dev FullStack"
+  public imgUser: string = "../../../assets/teste.jpg"
+  public nameUser: string = "Jackson"
+  public nameOffice: string = "Dev FullStack"
 
   public showQuizDesktop: boolean = true;
 
 
 
   openDialogEditUser(): void {
-    const dialogRef = this.dialog.open(DialogEditPerfilComponent, {
-      data: {nameUser: this.nameUser, nameOffice: this.nameOffice, imgUser: this.imgUser},
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.nameUser = result;
-    });
+    this.userPerfilService.editInfoUser(this.nameUser, this.nameOffice, this.imgUser)
+    const dialogRef = this.dialog.open(DialogEditPerfilComponent, {});
+    dialogRef.afterClosed()
   }
 
   ngOnInit(): void {
+
 
   }
 
