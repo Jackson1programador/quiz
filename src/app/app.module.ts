@@ -15,6 +15,7 @@ import { FormQuizComponent } from './pages/form-quiz/form-quiz.component';
 import { PlayingComponent } from './pages/playing/playing.component';
 import { TemplateComponent } from './pages/template/template.component';
 import { DialogEditPerfilComponent } from './shared/dialog-edit-perfil/dialog-edit-perfil.component';
+import { MenuIconComponent } from './shared/menu-icon/menu-icon.component';
 
 // Angular Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,6 +25,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 //Serviços
 import { ServiceUserPerfilService } from './service/service-user-perfil.service';
@@ -38,6 +41,7 @@ import { ServiceUserPerfilService } from './service/service-user-perfil.service'
     PlayingComponent,
     TemplateComponent,
     DialogEditPerfilComponent,
+    MenuIconComponent,
 
 
   ],
@@ -52,7 +56,8 @@ import { ServiceUserPerfilService } from './service/service-user-perfil.service'
     HttpClientModule,
     MatFormFieldModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MatMenuModule
 
 
 
@@ -66,7 +71,8 @@ import { ServiceUserPerfilService } from './service/service-user-perfil.service'
     MatButtonModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatMenuModule
 
   ],
   providers: [],

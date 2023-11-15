@@ -2,19 +2,21 @@
 
   <!-- Toolbar -->
   <header class="gridItem">
-    <mat-toolbar olbar color="primary">
-      <mat-icon class="logoQuiz">quiz</mat-icon>
-      <span class="logoQuizText">Quiz</span>
+    <mat-toolbar olbar color="primary" id="toolbar">
+      <img [src]="imgUser" alt="foto do usuario" class="imgUser" id="ableSmartphone" (click)="openDialogEditUser()">
+      <mat-icon class="logoQuiz" id="disabledSmartphone">quiz</mat-icon>
+      <span class="logoQuizText" id="disabledSmartphoneX">Quiz</span>
       <button id="btnMenu" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon id="btnMenu" >menu</mat-icon>
       </button>
       <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
+      <button id="disabledSmartphone" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon id="disabledSmartphone">favorite</mat-icon>
       </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
+      <button mat-icon-button id="disabledSmartphone" class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon id="disabledSmartphone">share</mat-icon>
       </button>
+      <app-menu-icon id="ableSmartphone"></app-menu-icon>
     </mat-toolbar>
   </header>
 
@@ -29,8 +31,8 @@
 
       <div class="containerNavBar flx column center">
         <ul class="listNav">
-          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">list</mat-icon><Samp class="descritionNav">Tipo de jogos</Samp></li></a>
-          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">format_list_bulleted</mat-icon><samp class="descritionNav">Categorias</samp></li></a>
+          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">list</mat-icon><Samp class="descritionNav">Opções</Samp></li></a>
+          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">format_list_bulleted</mat-icon><samp class="descritionNav">Gêneros</samp></li></a>
           <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">play_circle_filled</mat-icon><span class="descritionNav">Iniciar</span></li></a>
           <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">question_mark</mat-icon><span class="descritionNav">Enviar quiz</span></li></a>
           <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">hotel_class</mat-icon><span class="descritionNav">Vip</span></li></a>
@@ -46,7 +48,7 @@
 
   <!-- Footer -->
   <footer class="gridItem">
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" id="footer">
       <mat-toolbar-row class="flx column">
           <div class="container-copyright flx column center">
             <p class="fonte-copyright">&copy; Jackson Albuquerque 2023</p>
