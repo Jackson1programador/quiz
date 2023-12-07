@@ -2,28 +2,28 @@
   <mat-icon>more_vert</mat-icon>
 </button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>
+  <a routerLink="/type-play" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" mat-menu-item>
     <mat-icon>list</mat-icon>
     <span>Opções de jogos</span>
-  </button>
-  <button mat-menu-item>
+  </a>
+  <a routerLink="/category" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" mat-menu-item>
     <mat-icon>format_list_bulleted</mat-icon>
     <span>Gêneros das perguntas</span>
-  </button>
-  <button mat-menu-item>
+  </a>
+  <a routerLink="/playing" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" mat-menu-item>
     <mat-icon>play_circle_filled</mat-icon>
     <span>Iniciar</span>
-  </button>
-  <button mat-menu-item>
+  </a>
+  <a routerLink="/form-quiz" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" mat-menu-item>
     <mat-icon>question_mark</mat-icon>
     <span>Enviar quiz</span>
-  </button>
-  <button mat-menu-item>
+  </a>
+  <a routerLink="/vip" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" mat-menu-item>
     <mat-icon>hotel_class</mat-icon>
     <span>Vip</span>
-  </button>
-  <button mat-menu-item>
+  </a>
+  <a routerLink="/" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" mat-menu-item>
     <mat-icon>logout</mat-icon>
     <span>Sair</span>
-  </button>
+  </a>
 </mat-menu>

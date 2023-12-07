@@ -30,6 +30,10 @@ import {MatMenuModule} from '@angular/material/menu';
 
 //Serviços
 import { ServiceUserPerfilService } from './service/service-user-perfil.service';
+import { CategoryComponent } from './pages/category/category.component';
+import { TypePlayComponent } from './pages/type-play/type-play.component';
+import { VipComponent } from './pages/vip/vip.component';
+import { ErroComponent } from './pages/erro/erro.component';
 
 
 @NgModule({
@@ -42,6 +46,10 @@ import { ServiceUserPerfilService } from './service/service-user-perfil.service'
     TemplateComponent,
     DialogEditPerfilComponent,
     MenuIconComponent,
+    CategoryComponent,
+    TypePlayComponent,
+    VipComponent,
+    ErroComponent,
 
 
   ],

@@ -31,17 +31,18 @@
 
       <div class="containerNavBar flx column center">
         <ul class="listNav">
-          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">list</mat-icon><Samp class="descritionNav">Opções</Samp></li></a>
-          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">format_list_bulleted</mat-icon><samp class="descritionNav">Gêneros</samp></li></a>
-          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">play_circle_filled</mat-icon><span class="descritionNav">Iniciar</span></li></a>
-          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">question_mark</mat-icon><span class="descritionNav">Enviar quiz</span></li></a>
-          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">hotel_class</mat-icon><span class="descritionNav">Vip</span></li></a>
-          <a href="" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">logout</mat-icon><span class="descritionNav">Sair</span></li></a>
+          <a routerLink="/type-play" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">list</mat-icon><Samp class="descritionNav">Opções</Samp></li></a>
+          <a routerLink="/category" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">format_list_bulleted</mat-icon><samp class="descritionNav">Gêneros</samp></li></a>
+          <a routerLink="/playing" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">play_circle_filled</mat-icon><span class="descritionNav">Iniciar</span></li></a>
+          <a routerLink="/form-quiz" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">question_mark</mat-icon><span class="descritionNav">Enviar quiz</span></li></a>
+          <a routerLink="/vip" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">hotel_class</mat-icon><span class="descritionNav">Vip</span></li></a>
+          <a routerLink="/" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="linkNav"> <li class="liNav"> <mat-icon class="iconNav">logout</mat-icon><span class="descritionNav">Sair</span></li></a>
         </ul>
       </div>
 
     </div>
     <div class="pages gridItem">
+      <router-outlet></router-outlet>
 
     </div>
 
